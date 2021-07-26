@@ -1,11 +1,7 @@
 /*------------------------------------------------
-Template Name: Imroz - Html5 Agency & Portfolio Template
-All Main Js Here  
-
 Index All JS 
 -----------------------
         01. Wow Active
-        02. Counter Up
         03. Feature Icon Activation
         04. Youtub Popup 
         05. Slick Activation            
@@ -39,7 +35,6 @@ Index All JS
         methods: function (e) {
             imJs.featherAtcivation();
             imJs.wowActive();
-            imJs.counterupActive();
             imJs.videoActivation();
             imJs.slickActivation();
             imJs.mesonaryActivation();
@@ -94,13 +89,6 @@ Index All JS
             new WOW().init();
         },
 
-
-        counterupActive: function () {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        },
 
         videoActivation: function () {
             $('.play__btn').yu2fvl();
