@@ -24,21 +24,21 @@
 </head>
 
 <body>
-    <div class="active-dark">
+
 
     <!-- Header area Start -->
     <header class="header-area formobile-menu header--static color-black">
         <div class="header-wrapper" id="header-wrapper">
             <div class="header-left">
-                <div class="logo"><a href="javscript:void(0);"><img src="https://django-b2b.s3.amazonaws.com/static/img/logo/exmyb_logo_white.png" alt="ExMyB"></a></div>
+                <div class="logo"><a href="javscript:void(0);"><img src="https://django-b2b.s3.amazonaws.com/static/img/logo/exmyb_logo.png" alt="ExMyB"></a></div>
             </div>
             <div class="header-right">
                 <nav class="mainmenunav">
                     <ul class="mainmenu">
                         <li><a href="javscript:void(0);">Home</a></li>
-                        <li><a href="javscript:void(0);">About</a></li>
-                        <li><a href="javscript:void(0);">Service</a></li>
-                        <li><a href="javscript:void(0);">Pages</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#work">Our Work</a></li>
                     </ul>
                 </nav>
                 <div class="header-btn">
@@ -105,7 +105,7 @@
     <!-- Slider area End -->
 
      <!-- start about area -->
-     <div class="about-area ptb--120 bg_color--1">
+     <div class="about-area ptb--120 bg_color--1" id="about">
         <div class="about-wrapper">
             <div class="container">
                 <div class="row row--35 align-items-center">
@@ -138,7 +138,7 @@
     <!-- End about area -->
 
     <!-- Services area Start -->
-    <div class="service-area ptb--120 bg_color--5">
+    <div class="service-area ptb--120 bg_color--5" id="service">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -257,16 +257,24 @@
     <!-- Services area End -->
 
     <!-- Portfolio area -->
-    <div class="designer-portfolio-area ptb--120 bg_color--1">
+    <div class="designer-portfolio-area ptb--120 bg_color--1" id="work">
         <div class="wrapper plr--70 plr_sm--30 plr_md--30">
             <div class="row text-center">
                 <div class="col-lg-12">
+                    <div class="section-title text-center mb--30 mb_sm--0"><span class="subtitle">My
+                            Complete project</span>
+                        <h2 class="title">My Latest Project</h2>
+                        <p class="description">There are many variations of passages of Lorem Ipsum
+                            available, <br> but the majority have suffered alteration.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
                     <div class="tablist-inner">
                         <div class="messonry-button pv-tab-button text-center">
-                            <button data-filter="*" class="is-checked"><span class="filter-text text-light">All Project</span></button>
-                            <button data-filter=".cat--1"><span class="filter-text text-light">Web Design</span></button>
-                            <button data-filter=".cat--2"><span class="filter-text text-light">Logo Design</span></button>
-                            <button data-filter=".cat--3"><span class="filter-text text-light">Mobile App</span></button>
+                            <button data-filter="*" class="is-checked"><span class="filter-text ">All Project</span></button>
+                            <button data-filter=".cat--1"><span class="filter-text ">Web Design</span></button>
+                            <button data-filter=".cat--2"><span class="filter-text ">Logo Design</span></button>
+                            <button data-filter=".cat--3"><span class="filter-text ">Mobile App</span></button>
                         </div>
                     </div>
                 </div>
@@ -453,6 +461,12 @@
                 </a>
                 <!-- End Single Mesonry Item  -->
 
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="view-more-btn mt--60 mt_sm--30 text-center"><a class="btn-default" href="javscript:void(0);"><span> More Projects</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -671,15 +685,8 @@
             </div>
         </div>
     </div>
-    <!-- Start Back To Top Start -->
-    <!-- <div class="backto-top">
-        <div>
-            <i data-feather="chevron-up"></i>
-        </div>
-    </div> -->
 
-</div>
-    <!-- Start Back To Top End -->
+
     <!-- js  
 ======================================-->
     <!-- modernizer JS -->

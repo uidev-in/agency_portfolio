@@ -8962,7 +8962,6 @@ Portfolio Style Three
       .item-portfolio-static .inner p:hover {
         color: var(--color-primary); }
     .item-portfolio-static .inner h4 {
-      color:  var(--color-white);
       transition: 0.3s; }
       .item-portfolio-static .inner h4:hover {
         color: var(--color-primary); }
@@ -10807,7 +10806,7 @@ ul.social-transparent {
 Call To Action Wrapper 
 -----------------------------*/
 .call-to-action {
-  background: var(--color-primary);
+  background: var(--color-dark);
   position: relative;
   z-index: 2; }
   .call-to-action .inner > span {
