@@ -1,17 +1,17 @@
 /*------------------------------------------------
 Index All JS 
 -----------------------
-        01. Wow Active
-        03. Feature Icon Activation
-        04. Youtub Popup 
-        05. Slick Activation            
-        06. Paralax Window
-        07. LightBox
-        08. Parallax Activation
-        09. Masonry Activation
-        10. ScrollUp Activation
-        11. Mobile Menu Activation
-        12. Smoth Scroll
+        - Wow Active
+        - Feature Icon Activation
+        - Youtub Popup 
+        - Slick Activation            
+        - Paralax Window
+        - LightBox
+        - Parallax Activation
+        - Masonry Activation
+        - ScrollUp Activation
+        - Mobile Menu Activation
+        - Smoth Scroll
 --------------------------------------------------*/
 
 (function (window, document, $, undefined) {
@@ -35,51 +35,12 @@ Index All JS
         methods: function (e) {
             imJs.featherAtcivation();
             imJs.wowActive();
-            imJs.videoActivation();
             imJs.slickActivation();
             imJs.mesonaryActivation();
-            imJs.lightboxActivation();
-            imJs.backToTopInit();
             imJs.mobileMenuActive();
             imJs.stickyHeader();
-            imJs.contactForm();
         },
 
-
-        contactForm: function () {
-            $('.rwt-dynamic-form').on('submit', function (e) {
-				e.preventDefault();
-				var _self = $(this);
-				var __selector = _self.closest('input,textarea');
-				_self.closest('div').find('input,textarea').removeAttr('style');
-				_self.find('.error-msg').remove();
-				_self.closest('div').find('button[type="submit"]').attr('disabled', 'disabled');
-				var data = $(this).serialize();
-				$.ajax({
-					url: 'mail.php',
-					type: "post",
-					dataType: 'json',
-					data: data,
-					success: function (data) {
-						_self.closest('div').find('button[type="submit"]').removeAttr('disabled');
-						if (data.code == false) {
-							_self.closest('div').find('[name="' + data.field + '"]');
-							_self.find('.btn-primary').after('<div class="error-msg"><p>*' + data.err + '</p></div>');
-						} else {
-							$('.error-msg').hide();
-							$('.form-group').removeClass('focused');
-							_self.find('.btn-primary').after('<div class="success-msg"><p>' + data.success + '</p></div>');
-							_self.closest('div').find('input,textarea').val('');
-
-							setTimeout(function () {
-								$('.success-msg').fadeOut('slow');
-							}, 5000);
-						}
-					}
-				});
-			});
-
-        },
 
         featherAtcivation: function () {
             feather.replace()
@@ -87,11 +48,6 @@ Index All JS
 
         wowActive: function () {
             new WOW().init();
-        },
-
-
-        videoActivation: function () {
-            $('.play__btn').yu2fvl();
         },
 
         slickActivation: function () {
@@ -220,39 +176,6 @@ Index All JS
                 $(this).addClass('is-checked');
                 event.preventDefault();
             });
-        },
-
-        lightboxActivation: function() {
-            lightGallery(document.getElementById('animated-thumbnials'), {
-                thumbnail: true,
-                animateThumb: false,
-                showThumbByDefault: false
-            });
-        },
-
-        backToTopInit: function () {
-            // declare variable
-            var scrollTop = $('.backto-top');
-            $(window).scroll(function () {
-                // declare variable
-                var topPos = $(this).scrollTop();
-                // if user scrolls down - show scroll to top button
-                if (topPos > 100) {
-                    $(scrollTop).css("opacity", "1");
-
-                } else {
-                    $(scrollTop).css("opacity", "0");
-                }
-            }); // scroll END
-
-            //Click event to scroll to top
-            $(scrollTop).click(function () {
-                $('html, body').animate({
-                    scrollTop: 0,
-                    easingType: 'linear',
-                }, 500);
-                return false;
-            }); // click() scroll top EMD
         },
 
         mobileMenuActive: function (e) {
