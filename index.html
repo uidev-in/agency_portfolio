@@ -67,6 +67,129 @@ video {
     border-radius: 20px;
 }
 
+.services__shape-2 img {
+    position: absolute;
+}
+
+.services__shape-2 img.services-2-circle {
+    top: 12%;
+    left: 0;
+    opacity: 0.04;
+}
+.services__shape-2 img.services-2-circle-2 {
+    top: 26%;
+    left: 0;
+    opacity: 0.06;
+}
+
+.features__shape img {
+  position: absolute;
+  z-index: -1;
+}
+.features__shape img.features-circle-1 {
+  left: 4%;
+  top: 29%;
+}
+.features__shape-2 img {
+  position: absolute;
+  z-index: 1;
+}
+
+.features__shape-2 img.features-2-dot {
+  left: 2%;
+  top: 24%;
+  -webkit-animation: features-dot-1 4s linear 0s infinite alternate;
+  -moz-animation: features-dot-1 4s linear 0s infinite alternate;
+  -o-animation: features-dot-1 4s linear 0s infinite alternate;
+  animation: features-dot-1 4s linear 0s infinite alternate;
+}
+.features__shape-2 img.features-2-dot-2 {
+  right: 5%;
+  top: 23%;
+  -webkit-animation: features-dot-2 4s linear 0s infinite alternate;
+  -moz-animation: features-dot-2 4s linear 0s infinite alternate;
+  -o-animation: features-dot-2 4s linear 0s infinite alternate;
+  animation: features-dot-2 4s linear 0s infinite alternate;
+}
+.features__shape-2 img.features-2-dot-3 {
+  bottom: 2%;
+  right: 12%;
+  -webkit-animation: features-dot-1 4s linear 0s infinite alternate;
+  -moz-animation: features-dot-1 4s linear 0s infinite alternate;
+  -o-animation: features-dot-1 4s linear 0s infinite alternate;
+  animation: features-dot-1 4s linear 0s infinite alternate;
+}
+
+.features__shape-2 img.features-2-triangle-1 {
+  top: 17%;
+  left: 19%;
+  -webkit-animation: features-triangle-1 5s linear infinite;
+  -moz-animation: features-triangle-1 5s linear infinite;
+  -o-animation: features-triangle-1 5s linear infinite;
+  animation: features-triangle-1 5s linear infinite;
+}
+.features__shape-2 img.features-2-triangle-2 {
+  left: 10%;
+  top: 55%;
+  -webkit-animation: features-triangle-1 5s linear infinite;
+  -moz-animation: features-triangle-1 5s linear infinite;
+  -o-animation: features-triangle-1 5s linear infinite;
+  animation: features-triangle-1 5s linear infinite;
+}
+.features__shape-2 img.features-2-triangle-3 {
+  right: 5%;
+  bottom: 18%;
+  -webkit-animation: features-triangle-1 5s linear infinite;
+  -moz-animation: features-triangle-1 5s linear infinite;
+  -o-animation: features-triangle-1 5s linear infinite;
+  animation: features-triangle-1 5s linear infinite;
+}
+@keyframes features-triangle-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes features-dot-1 {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes features-dot-2 {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.about__shape-2 img {
+    position: absolute;
+}
+.about__shape-2 img.about-2-circle {
+    right: 0;
+    bottom: 34%;
+    opacity: 0.04;
+}
+.about__shape-2 img.about-2-circle-2 {
+    right: 0;
+    bottom: 22%;
+    opacity: 0.06;
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
@@ -199,7 +322,19 @@ video {
     <!-- End about area -->
 
     <!-- Services area Start -->
-    <div class="service-area ptb--120 bg_color--5" id="service">
+    <div class="service-area ptb--120 bg_color--5" id="service" style="position: relative;">
+        <div class="services__shape-2">
+            <img class="services-2-circle" src="assets/images/service/services-circle.png" alt="">
+            <img class="services-2-circle-2" src="assets/images/service/services-circle-2.png" alt="">
+         </div>
+        <div class="features__shape-2">
+            <img class="features-2-dot" src="assets/images/service/features-dot.png" alt="">
+            <img class="features-2-dot-2" src="assets/images/service/features-dot-2.png" alt="">
+            <img class="features-2-dot-3" src="assets/images/service/features-dot-3.png" alt="">
+            <img class="features-2-triangle-1" src="assets/images/service/features-triangle-1.png" alt="">
+            <img class="features-2-triangle-2" src="assets/images/service/features-triangle-2.png" alt="">
+            <img class="features-2-triangle-3" src="assets/images/service/features-triangle-3.png" alt="">
+         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -272,6 +407,10 @@ video {
                 </div>
             </div>
         </div>
+        <div class="about__shape-2">
+            <img class="about-2-circle" src="assets/images/service/about-circle.png" alt="">
+            <img class="about-2-circle-2" src="assets/images/service/about-circle-2.png" alt="">
+         </div>
     </div>
     <!-- Services area End -->
 
