@@ -50,10 +50,38 @@ video {
     z-index: 3;
     color: #fff;
 }
+.service {
+    overflow: hidden;
+}
+
+.service .shape {
+    width: 100px;
+    height: 60px;
+    background: #2392fe;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    transform: rotate(20deg);
+    z-index: 10;
+    border-radius: 20px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #020c34;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+
 </style>
 <body>
-
-
     <!-- Header area Start -->
     <header class="header-area formobile-menu header--static color-black">
         <div class="header-wrapper" id="header-wrapper">
@@ -186,101 +214,59 @@ video {
                 <div class="col-lg-12 col-12 mt--30">
                     <div class="row service-main-wrapper">
 
-                        <!-- start single Services -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <a href="service-details.html">
-                                <div class="service service__style--2 text-left">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cast"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title">Business Stratagy</h3>
-                                        <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                         <!-- start single Services -->
+                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                             <div class="service service__style--2 text-center">
+                                 <span class="shape"></span>
+                                 <div class="content">
+                                     <h3 class="title">Web Development</h3>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                             <div class="service service__style--2 text-center">
+                                 <span class="shape"></span>
+                                 <div class="content">
+                                     <h3 class="title">App Development</h3>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                             <div class="service service__style--2 text-center">
+                                 <span class="shape"></span>
+                                 <div class="content">
+                                     <h3 class="title">Graphic Design</h3>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                             <div class="service service__style--2 text-center">
+                                 <span class="shape"></span>
+                                 <div class="content">
+                                     <h3 class="title">UI / UX Design</h3>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                             <div class="service service__style--2 text-center">
+                                 <span class="shape"></span>
+                                 <div class="content">
+                                     <h3 class="title">Logo Design</h3>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                             <div class="service service__style--2 text-center">
+                                 <span class="shape"></span>
+                                 <div class="content">
+                                     <h3 class="title">Digital Marketing</h3>
+                                 </div>
+                             </div>
+                         </div>
+
                         <!-- End single Services -->
 
-                        <!-- start single Services -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <a href="service-details.html">
-                                <div class="service service__style--2 text-left">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title">Business Stratagy</h3>
-                                        <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- End single Services -->
-
-                        <!-- start single Services -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <a href="service-details.html">
-                                <div class="service service__style--2 text-left">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title">Business Stratagy</h3>
-                                        <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- End single Services -->
-
-                        <!-- start single Services -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <a href="service-details.html">
-                                <div class="service service__style--2 text-left">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title">Business Stratagy</h3>
-                                        <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- End single Services -->
-
-                        <!-- start single Services -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <a href="service-details.html">
-                                <div class="service service__style--2 text-left">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cast"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title">Business Stratagy</h3>
-                                        <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- End single Services -->
-
-                        <!-- start single Services -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <a href="service-details.html">
-                                <div class="service service__style--2 text-left">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="title">Business Stratagy</h3>
-                                        <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- End single Services -->
+                       
 
                     </div>
                 </div>
