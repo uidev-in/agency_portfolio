@@ -54,15 +54,34 @@ video {
     overflow: hidden;
 }
 
-.service .shape {
+.service .shape-right {
     width: 100px;
     height: 60px;
-    background: #2392fe;
+    background: linear-gradient(
+120deg
+, #1C99FE 20.69%, #7644FF 50.19%, var(--color-primary) 79.69%);
     opacity: 0.2;
     position: absolute;
     top: 0;
-    right: -60px;
+    right: -70px;
     transform: rotate(20deg);
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.service .shape-left {
+    width: 100px;
+    height: 60px;
+    background: linear-gradient(
+120deg
+, #1C99FE 20.69%, #7644FF 50.19%, var(--color-primary) 79.69%);
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+    transform: rotate(
+21deg
+);
     z-index: 10;
     border-radius: 20px;
 }
@@ -352,7 +371,8 @@ video {
                          <!-- start single Services -->
                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                              <div class="service service__style--2 text-center">
-                                 <span class="shape"></span>
+                                <span class="shape-left"></span>
+                                 <span class="shape-right"></span>
                                  <div class="content">
                                      <h3 class="title">Web Development</h3>
                                  </div>
@@ -360,7 +380,8 @@ video {
                          </div>
                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                              <div class="service service__style--2 text-center">
-                                 <span class="shape"></span>
+                                 <span class="shape-left"></span>
+                                 <span class="shape-right"></span>
                                  <div class="content">
                                      <h3 class="title">App Development</h3>
                                  </div>
@@ -368,7 +389,8 @@ video {
                          </div>
                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                              <div class="service service__style--2 text-center">
-                                 <span class="shape"></span>
+                                 <span class="shape-left"></span>
+                                 <span class="shape-right"></span>
                                  <div class="content">
                                      <h3 class="title">Graphic Design</h3>
                                  </div>
@@ -376,7 +398,8 @@ video {
                          </div>
                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                              <div class="service service__style--2 text-center">
-                                 <span class="shape"></span>
+                                 <span class="shape-left"></span>
+                                 <span class="shape-right"></span>
                                  <div class="content">
                                      <h3 class="title">UI / UX Design</h3>
                                  </div>
@@ -384,7 +407,8 @@ video {
                          </div>
                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                              <div class="service service__style--2 text-center">
-                                 <span class="shape"></span>
+                                 <span class="shape-left"></span>
+                                 <span class="shape-right"></span>
                                  <div class="content">
                                      <h3 class="title">Logo Design</h3>
                                  </div>
@@ -392,7 +416,8 @@ video {
                          </div>
                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                              <div class="service service__style--2 text-center">
-                                 <span class="shape"></span>
+                                 <span class="shape-left"></span>
+                                 <span class="shape-right"></span>
                                  <div class="content">
                                      <h3 class="title">Digital Marketing</h3>
                                  </div>
